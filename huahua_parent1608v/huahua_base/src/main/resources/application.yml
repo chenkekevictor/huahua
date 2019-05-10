@@ -1,0 +1,29 @@
+#设置端口号
+server:
+  port: 9001
+
+  ###设置项目名称(项目名称不能使用下横杠)  用于以后spring cloud服务的查找
+spring:
+  application:
+    name: huahua-base
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.219.128:3306/huahua_base?characterEncoding=utf8
+    username: root
+    password: root
+
+    #jpa的配置
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: true
+###mybatis映射路径
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+
+
+#日志级别
+logging:
+  level:
+    root: info
+

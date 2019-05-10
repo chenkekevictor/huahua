@@ -1,0 +1,22 @@
+server: 
+  port: 9002
+spring: 
+  application:  
+    name: huahua-recrult #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.219.128:3306/huahua_recruit?useUnicode=true&amp;characterEncoding=UTF8
+    username: root
+    password: root
+  jpa: 
+    database: MySQL
+    show-sql: true
+###mybatis映射路径
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+
+
+#日志级别
+logging:
+  level:
+    root: info

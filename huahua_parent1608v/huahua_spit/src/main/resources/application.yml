@@ -1,0 +1,20 @@
+server:
+  port: 9006
+spring:
+  application:
+    name: huahua-spit
+
+#mongodb
+  data:
+    mongodb:
+      host: 192.168.219.128
+      database: spitdb
+      port: 27017
+    #redis
+  redis:
+    host: 192.168.219.128
+    port: 6379
+   ### password: zhangyy
+
+
+
